@@ -17,6 +17,7 @@ public class MessageReceiver2 {
         System.out.println("睡眠2s");
         //告诉消息队列这条消息被消费 可以删除这消息
         //channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+
         System.out.println("消费者2 queue1: "+msg);
     }
 }
